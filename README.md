@@ -1,45 +1,49 @@
 Euler Problems
 =====
+# js/
+## js/001.js
+81 ms
+
 # perl/
 ## perl/001.pl
-16 ms
+10 ms
 
 ## perl/002.pl
-9 ms
+7 ms
 
 ## perl/003.pl
 163 ms
 
 ## perl/004.pl
-3052 ms
+3243 ms
 
 ## perl/005.pl
-9 ms
+10 ms
 
 ## perl/006.pl
-8 ms
+14 ms
 
 ## perl/007.pl
-839 ms
+638 ms
 
 ## perl/008.pl
 13 ms
 
 ## perl/009.pl
-67 ms
+59 ms
 
 ## perl/010.pl
-35434 ms
+35218 ms
 
 ## perl/011.pl
-11 ms
+14 ms
 
 ## perl/012.pl
-9837 ms
+9871 ms
 
 ## perl/013.pl
-16 ms
+18 ms
 
 ## perl/014.pl
-11030 ms
+10734 ms
 
