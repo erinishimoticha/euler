@@ -99,4 +99,4 @@ for (my $r = 19; $r >= 3; $r--){
     }
 }
 
-print "answer is $greatest\n";
+print "$greatest\n";

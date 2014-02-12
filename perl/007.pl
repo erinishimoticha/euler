@@ -9,6 +9,7 @@ use warnings;
 # that the 6th prime is 13.
 # What is the 10 001st prime number?
 
+use lib 'lib';
 use Prime;
 
 my $primeidx = 1; # prime #1 is 2.
