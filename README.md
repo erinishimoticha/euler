@@ -1,58 +1,20 @@
 Euler Problems
 =====
-# js/
-## js/001.js
-85 ms
-
-## js/002.js
-52 ms
-
-## js/003.js
-52 ms
-
-# perl/
-## perl/001.pl
-7 ms
-
-## perl/002.pl
-11 ms
-
-## perl/003.pl
-108 ms
-
-## perl/004.pl
-1929 ms
-
-## perl/005.pl
-5 ms
-
-## perl/006.pl
-6 ms
-
-## perl/007.pl
-378 ms
-
-## perl/008.pl
-7 ms
-
-## perl/009.pl
-43 ms
-
-## perl/010.pl
-22317 ms
-
-## perl/011.pl
-11 ms
-
-## perl/012.pl
-6118 ms
-
-## perl/013.pl
-18 ms
-
-## perl/014.pl
-7151 ms
-
-## perl/015.pl
-14 ms
-
+|Problem #|JavaScript|Perl|
+|---|---|---|
+|1|68.263 ms|5.419 ms|
+|2|67.545 ms|5.323 ms|
+|3|83.413 ms|159.032 ms|
+|4|n/a|2998.462 ms|
+|5|n/a|5.181 ms|
+|6|n/a|4.648 ms|
+|7|n/a|610.783 ms|
+|8|n/a|7.964 ms|
+|9|n/a|50.907 ms|
+|10|n/a|35359.896 ms|
+|11|n/a|13.603 ms|
+|12|n/a|10436.626 ms|
+|13|n/a|20.93 ms|
+|14|n/a|10637.666 ms|
+|15|n/a|5.452 ms|
+|16|n/a|70.616 ms|
