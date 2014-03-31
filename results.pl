@@ -32,6 +32,7 @@ foreach my $langConfig (sort {$a->{'dir'} cmp $b->{'dir'}} @config) {
 open(OUT, ">README.md");
 print OUT "Euler Problems\n";
 print OUT "=====\n";
+print OUT "This is just my attempt to keep my mathematical skills honed.\n";
 print OUT "|" . join('|', @cols) . "|" . "\n";
 @cols = map {'---'} @cols;
 print OUT "|" . join('|', @cols) . "|" . "\n";

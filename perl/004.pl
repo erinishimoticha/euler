@@ -10,9 +10,10 @@ use warnings;
 # Find the largest palindrome made from the product of two 3-digit numbers.
 
 my $answer = 0;
-for (my $i = 100; $i < 1000; $i++) {
-    for (my $j = 100; $j < 1000; $j++) {
+for (my $i = 999; $i >= 100; $i--) {
+    for (my $j = 999; $j >= 100; $j--) {
         my $product = $i * $j;
+        next if $answer > $product;
         my @digits = split(//, $product);
         my $ispal = 1;
         my $ln = $#digits;
@@ -22,7 +23,8 @@ for (my $i = 100; $i < 1000; $i++) {
                 $ispal = 0;
             }
         }
-        if ($ispal && $product > $answer) {
+
+        if ($ispal) {
             $answer = $product;
         }
     }
