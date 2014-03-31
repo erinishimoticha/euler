@@ -33,7 +33,7 @@ open(OUT, ">README.md");
 print OUT "Euler Problems\n";
 print OUT "=====\n";
 print OUT "This is just my attempt to keep my mathematical skills honed.\n";
-print OUT "|" . join('|', @cols) . "|" . "\n";
+print OUT "\n|" . join('|', @cols) . "|" . "\n";
 @cols = map {'---'} @cols;
 print OUT "|" . join('|', @cols) . "|" . "\n";
 foreach my $num (sort {$a <=> $b} keys %$res) {
