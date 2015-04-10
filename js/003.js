@@ -9,6 +9,7 @@
  * What is the largest prime factor of the number 600851475143?
  */
 
+var isPrime = require('./prime');
 var n = 600851475143;
 var sq = Math.sqrt(n);
 var div = 2;
