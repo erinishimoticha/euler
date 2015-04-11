@@ -1,0 +1,4 @@
+#!/bin/sh
+
+./results.pl
+git add -u
