@@ -12,27 +12,24 @@ my @cols = ('Problem #');
 
 foreach my $langConfig (sort {$a->{'dir'} cmp $b->{'dir'}} @config) {
     push(@cols, $langConfig->{'name'});
-    chdir($langConfig->{'dir'});
     for (my $idx = 1; $idx < 500; $idx++) {
-        my $file  = sprintf("%03d." . $langConfig->{'ext'}, $idx);
+        my $file  = sprintf("./$langConfig->{'dir'}/%03d." . $langConfig->{'ext'}, $idx);
         my ($begin, $time) = (0, 0);
         if (-e $file) {
             $res->{$idx}{$langConfig->{'dir'}}{'num'} = $idx;
             $begin = [gettimeofday];
-            $res->{$idx}{$langConfig->{'dir'}}{'result'} = `./$file`;
+            $res->{$idx}{$langConfig->{'dir'}}{'result'} = `$file`;
             $res->{$idx}{$langConfig->{'dir'}}{'time'} = tv_interval($begin, [gettimeofday]) * 1000;
             $res->{$idx}{$langConfig->{'dir'}}{'time'} .= " ms";
             chomp $res->{$idx}{$langConfig->{'dir'}}{'result'};
         }
     }
-    chdir('..');
 }
 
 
 open(OUT, ">README.md");
 print OUT "Euler Problems\n";
 print OUT "=====\n";
-print OUT "This is just my attempt to keep my mathematical skills honed.\n";
 print OUT "\n|" . join('|', @cols) . "|" . "\n";
 @cols = map {'---'} @cols;
 print OUT "|" . join('|', @cols) . "|" . "\n";
